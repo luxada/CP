@@ -1,0 +1,537 @@
+3ª Fase
+  
+  
+  
+3ª Fase
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                  WELCOME TO WILLY P CHEM MD!
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ENTER A TITLE FOR YOUR CALCULATION!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                  TITLE ENTERED AS 'cp'
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  WHICH NOBLE GAS WOULD YOU LIKE TO SIMULATE? (DEFAULT IS ARGON)
+
+  FOR HELIUM,  TYPE 'He' THEN PRESS 'return' TO CONTINUE
+  FOR NEON,    TYPE 'Ne' THEN PRESS 'return' TO CONTINUE
+  FOR ARGON,   TYPE 'Ar' THEN PRESS 'return' TO CONTINUE
+  FOR KRYPTON, TYPE 'Kr' THEN PRESS 'return' TO CONTINUE
+  FOR XENON,   TYPE 'Xe' THEN PRESS 'return' TO CONTINUE
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                     YOU ARE SIMULATING Ar GAS! 
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  YOU WILL NOW ENTER A FEW SIMULATION PARAMETERS
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+  ENTER THE INTIAL TEMPERATURE OF YOUR GAS IN KELVIN
+
+
+  ENTER THE NUMBER DENSITY IN moles/m^3
+  FOR REFERENCE, NUMBER DENSITY OF AN IDEAL GAS AT STP IS ABOUT 40 moles/m^3
+  NUMBER DENSITY OF LIQUID ARGON AT 1 ATM AND 87 K IS ABOUT 35000 moles/m^3
+  PERCENTAGE OF CALCULATION COMPLETE:
+  [==40555== NVPROF is profiling process 40555, command: ./bin/MDpar2.exe 313 16 1000
+ 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100 ]
+
+  TO ANIMATE YOUR SIMULATION, OPEN THE FILE 
+  'cp_traj.xyz' WITH VMD AFTER THE SIMULATION COMPLETES
+
+  TO ANALYZE INSTANTANEOUS DATA ABOUT YOUR MOLECULE, OPEN THE FILE 
+  'cp_output.txt' WITH YOUR FAVORITE TEXT EDITOR OR IMPORT THE DATA INTO EXCEL
+
+  THE FOLLOWING THERMODYNAMIC AVERAGES WILL BE COMPUTED AND WRITTEN TO THE FILE  
+  'cp_average.txt':
+
+  AVERAGE TEMPERATURE (K):                        84.07127
+
+  AVERAGE PRESSURE  (Pa):                   11655016.84560
+
+  PV/nT (J * mol^-1 K^-1):                         3.96093
+
+  PERCENT ERROR of pV/nT AND GAS CONSTANT:        52.36094
+
+  THE COMPRESSIBILITY (unitless):                  0.47639 
+
+  TOTAL VOLUME (m^3):                      4.74440e-26 
+
+  NUMBER OF PARTICLES (unitless):          1000 
+==40555== Profiling application: ./bin/MDpar2.exe 313 16 1000
+==40555== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   94.18%  669.79ms       201  3.3323ms  3.3246ms  3.3394ms  potentialComputeKernel(double*, double*, double*, double*, double*, double*, int, double*, int)
+                    3.45%  24.529ms      1407  17.433us  1.3110us  21.824us  [CUDA memcpy DtoH]
+                    1.95%  13.852ms       603  22.971us  22.528us  23.520us  [CUDA memcpy HtoD]
+                    0.42%  2.9997ms       804  3.7300us  1.7600us  5.0560us  [CUDA memset]
+      API calls:   75.98%  899.59ms      2010  447.56us  14.951us  3.5064ms  cudaMemcpy
+                   20.46%  242.26ms      1407  172.18us  2.7330us  207.97ms  cudaMalloc
+                    2.44%  28.881ms      1407  20.526us  2.3610us  163.45us  cudaFree
+                    0.74%  8.7630ms       804  10.899us  4.4850us  72.260us  cudaMemset
+                    0.27%  3.1506ms       201  15.674us  12.574us  35.878us  cudaLaunchKernel
+                    0.04%  461.32us         1  461.32us  461.32us  461.32us  cuDeviceTotalMem
+                    0.03%  329.79us      1005     328ns     207ns  2.6060us  cudaGetLastError
+                    0.03%  326.26us       101  3.2300us     320ns  122.39us  cuDeviceGetAttribute
+                    0.02%  183.60us         1  183.60us  183.60us  183.60us  cuDeviceGetName
+                    0.00%  15.399us         1  15.399us  15.399us  15.399us  cuDeviceGetPCIBusId
+                    0.00%  11.057us         3  3.6850us     570ns  7.9340us  cuDeviceGetCount
+                    0.00%  1.9720us         2     986ns     518ns  1.4540us  cuDeviceGet
+                    0.00%     913ns         1     913ns     913ns     913ns  cuDeviceGetUuid 
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                  WELCOME TO WILLY P CHEM MD!
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ENTER A TITLE FOR YOUR CALCULATION!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                  TITLE ENTERED AS 'cp'
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  WHICH NOBLE GAS WOULD YOU LIKE TO SIMULATE? (DEFAULT IS ARGON)
+
+  FOR HELIUM,  TYPE 'He' THEN PRESS 'return' TO CONTINUE
+  FOR NEON,    TYPE 'Ne' THEN PRESS 'return' TO CONTINUE
+  FOR ARGON,   TYPE 'Ar' THEN PRESS 'return' TO CONTINUE
+  FOR KRYPTON, TYPE 'Kr' THEN PRESS 'return' TO CONTINUE
+  FOR XENON,   TYPE 'Xe' THEN PRESS 'return' TO CONTINUE
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                     YOU ARE SIMULATING Ar GAS! 
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  YOU WILL NOW ENTER A FEW SIMULATION PARAMETERS
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+  ENTER THE INTIAL TEMPERATURE OF YOUR GAS IN KELVIN
+
+
+  ENTER THE NUMBER DENSITY IN moles/m^3
+  FOR REFERENCE, NUMBER DENSITY OF AN IDEAL GAS AT STP IS ABOUT 40 moles/m^3
+  NUMBER DENSITY OF LIQUID ARGON AT 1 ATM AND 87 K IS ABOUT 35000 moles/m^3
+  PERCENTAGE OF CALCULATION COMPLETE:
+  [==40572== NVPROF is profiling process 40572, command: ./bin/MDpar2.exe 500 30 1000
+ 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100 ]
+
+  TO ANIMATE YOUR SIMULATION, OPEN THE FILE 
+  'cp_traj.xyz' WITH VMD AFTER THE SIMULATION COMPLETES
+
+  TO ANALYZE INSTANTANEOUS DATA ABOUT YOUR MOLECULE, OPEN THE FILE 
+  'cp_output.txt' WITH YOUR FAVORITE TEXT EDITOR OR IMPORT THE DATA INTO EXCEL
+
+  THE FOLLOWING THERMODYNAMIC AVERAGES WILL BE COMPUTED AND WRITTEN TO THE FILE  
+  'cp_average.txt':
+
+  AVERAGE TEMPERATURE (K):                        84.07127
+
+  AVERAGE PRESSURE  (Pa):                   11655016.84560
+
+  PV/nT (J * mol^-1 K^-1):                         3.96093
+
+  PERCENT ERROR of pV/nT AND GAS CONSTANT:        52.36094
+
+  THE COMPRESSIBILITY (unitless):                  0.47639 
+
+  TOTAL VOLUME (m^3):                      4.74440e-26 
+
+  NUMBER OF PARTICLES (unitless):          1000 
+==40572== Profiling application: ./bin/MDpar2.exe 500 30 1000
+==40572== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   94.85%  763.05ms       201  3.7963ms  3.7823ms  3.8060ms  potentialComputeKernel(double*, double*, double*, double*, double*, double*, int, double*, int)
+                    3.04%  24.462ms      1407  17.385us  1.3110us  21.537us  [CUDA memcpy DtoH]
+                    1.73%  13.927ms       603  23.096us  22.592us  23.744us  [CUDA memcpy HtoD]
+                    0.38%  3.0455ms       804  3.7870us  1.8230us  5.0240us  [CUDA memset]
+      API calls:   77.26%  990.58ms      2010  492.83us  14.546us  3.9865ms  cudaMemcpy
+                   19.41%  248.82ms      1407  176.84us  2.5590us  215.36ms  cudaMalloc
+                    2.31%  29.630ms      1407  21.059us  2.3520us  192.25us  cudaFree
+                    0.67%  8.5501ms       804  10.634us  4.0560us  61.847us  cudaMemset
+                    0.24%  3.1303ms       201  15.573us  11.518us  36.266us  cudaLaunchKernel
+                    0.05%  632.87us       101  6.2660us     327ns  418.99us  cuDeviceGetAttribute
+                    0.03%  421.13us         1  421.13us  421.13us  421.13us  cuDeviceTotalMem
+                    0.03%  337.44us      1005     335ns     154ns  7.7400us  cudaGetLastError
+                    0.00%  40.636us         1  40.636us  40.636us  40.636us  cuDeviceGetName
+                    0.00%  14.423us         1  14.423us  14.423us  14.423us  cuDeviceGetPCIBusId
+                    0.00%  4.4440us         3  1.4810us     553ns  2.9360us  cuDeviceGetCount
+                    0.00%  2.0170us         2  1.0080us     469ns  1.5480us  cuDeviceGet
+                    0.00%  1.0100us         1  1.0100us  1.0100us  1.0100us  cuDeviceGetUuid 
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                  WELCOME TO WILLY P CHEM MD!
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ENTER A TITLE FOR YOUR CALCULATION!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                  TITLE ENTERED AS 'cp'
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  WHICH NOBLE GAS WOULD YOU LIKE TO SIMULATE? (DEFAULT IS ARGON)
+
+  FOR HELIUM,  TYPE 'He' THEN PRESS 'return' TO CONTINUE
+  FOR NEON,    TYPE 'Ne' THEN PRESS 'return' TO CONTINUE
+  FOR ARGON,   TYPE 'Ar' THEN PRESS 'return' TO CONTINUE
+  FOR KRYPTON, TYPE 'Kr' THEN PRESS 'return' TO CONTINUE
+  FOR XENON,   TYPE 'Xe' THEN PRESS 'return' TO CONTINUE
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                     YOU ARE SIMULATING Ar GAS! 
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  YOU WILL NOW ENTER A FEW SIMULATION PARAMETERS
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+  ENTER THE INTIAL TEMPERATURE OF YOUR GAS IN KELVIN
+
+
+  ENTER THE NUMBER DENSITY IN moles/m^3
+  FOR REFERENCE, NUMBER DENSITY OF AN IDEAL GAS AT STP IS ABOUT 40 moles/m^3
+  NUMBER DENSITY OF LIQUID ARGON AT 1 ATM AND 87 K IS ABOUT 35000 moles/m^3
+  PERCENTAGE OF CALCULATION COMPLETE:
+  [==40591== NVPROF is profiling process 40591, command: ./bin/MDpar2.exe 313 16 2160
+ 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100 ]
+
+  TO ANIMATE YOUR SIMULATION, OPEN THE FILE 
+  'cp_traj.xyz' WITH VMD AFTER THE SIMULATION COMPLETES
+
+  TO ANALYZE INSTANTANEOUS DATA ABOUT YOUR MOLECULE, OPEN THE FILE 
+  'cp_output.txt' WITH YOUR FAVORITE TEXT EDITOR OR IMPORT THE DATA INTO EXCEL
+
+  THE FOLLOWING THERMODYNAMIC AVERAGES WILL BE COMPUTED AND WRITTEN TO THE FILE  
+  'cp_average.txt':
+
+  AVERAGE TEMPERATURE (K):                        88.70310
+
+  AVERAGE PRESSURE  (Pa):                   23075480.34971
+
+  PV/nT (J * mol^-1 K^-1):                         7.43265
+
+  PERCENT ERROR of pV/nT AND GAS CONSTANT:        10.60569
+
+  THE COMPRESSIBILITY (unitless):                  0.89394 
+
+  TOTAL VOLUME (m^3):                      1.02479e-25 
+
+  NUMBER OF PARTICLES (unitless):          2160 
+==40591== Profiling application: ./bin/MDpar2.exe 313 16 2160
+==40591== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   97.21%  1.44362s       201  7.1822ms  7.1694ms  7.1931ms  potentialComputeKernel(double*, double*, double*, double*, double*, double*, int, double*, int)
+                    1.65%  24.544ms      1407  17.444us  1.3110us  21.664us  [CUDA memcpy DtoH]
+                    0.93%  13.879ms       603  23.016us  22.560us  23.616us  [CUDA memcpy HtoD]
+                    0.21%  3.0529ms       804  3.7970us  1.8240us  12.288us  [CUDA memset]
+      API calls:   85.35%  1.70016s      2010  845.85us  15.005us  13.875ms  cudaMemcpy
+                   12.49%  248.78ms      1407  176.82us  2.5000us  214.69ms  cudaMalloc
+                    1.47%  29.360ms      1407  20.867us  2.2680us  653.23us  cudaFree
+                    0.45%  8.8985ms       804  11.067us  4.3290us  72.940us  cudaMemset
+                    0.16%  3.1401ms       201  15.622us  11.790us  46.802us  cudaLaunchKernel
+                    0.04%  756.77us         1  756.77us  756.77us  756.77us  cuDeviceTotalMem
+                    0.02%  394.31us       101  3.9040us     410ns  153.26us  cuDeviceGetAttribute
+                    0.02%  330.58us      1005     328ns     187ns  2.7540us  cudaGetLastError
+                    0.00%  35.836us         1  35.836us  35.836us  35.836us  cuDeviceGetName
+                    0.00%  16.271us         1  16.271us  16.271us  16.271us  cuDeviceGetPCIBusId
+                    0.00%  3.2140us         3  1.0710us     427ns  1.8100us  cuDeviceGetCount
+                    0.00%  1.7970us         2     898ns     452ns  1.3450us  cuDeviceGet
+                    0.00%  1.0140us         1  1.0140us  1.0140us  1.0140us  cuDeviceGetUuid 
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                  WELCOME TO WILLY P CHEM MD!
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ENTER A TITLE FOR YOUR CALCULATION!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                  TITLE ENTERED AS 'cp'
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  WHICH NOBLE GAS WOULD YOU LIKE TO SIMULATE? (DEFAULT IS ARGON)
+
+  FOR HELIUM,  TYPE 'He' THEN PRESS 'return' TO CONTINUE
+  FOR NEON,    TYPE 'Ne' THEN PRESS 'return' TO CONTINUE
+  FOR ARGON,   TYPE 'Ar' THEN PRESS 'return' TO CONTINUE
+  FOR KRYPTON, TYPE 'Kr' THEN PRESS 'return' TO CONTINUE
+  FOR XENON,   TYPE 'Xe' THEN PRESS 'return' TO CONTINUE
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                     YOU ARE SIMULATING Ar GAS! 
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  YOU WILL NOW ENTER A FEW SIMULATION PARAMETERS
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+  ENTER THE INTIAL TEMPERATURE OF YOUR GAS IN KELVIN
+
+
+  ENTER THE NUMBER DENSITY IN moles/m^3
+  FOR REFERENCE, NUMBER DENSITY OF AN IDEAL GAS AT STP IS ABOUT 40 moles/m^3
+  NUMBER DENSITY OF LIQUID ARGON AT 1 ATM AND 87 K IS ABOUT 35000 moles/m^3
+  PERCENTAGE OF CALCULATION COMPLETE:
+  [==40611== NVPROF is profiling process 40611, command: ./bin/MDpar2.exe 500 30 2160
+ 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100 ]
+
+  TO ANIMATE YOUR SIMULATION, OPEN THE FILE 
+  'cp_traj.xyz' WITH VMD AFTER THE SIMULATION COMPLETES
+
+  TO ANALYZE INSTANTANEOUS DATA ABOUT YOUR MOLECULE, OPEN THE FILE 
+  'cp_output.txt' WITH YOUR FAVORITE TEXT EDITOR OR IMPORT THE DATA INTO EXCEL
+
+  THE FOLLOWING THERMODYNAMIC AVERAGES WILL BE COMPUTED AND WRITTEN TO THE FILE  
+  'cp_average.txt':
+
+  AVERAGE TEMPERATURE (K):                        88.70310
+
+  AVERAGE PRESSURE  (Pa):                   23075480.34971
+
+  PV/nT (J * mol^-1 K^-1):                         7.43265
+
+  PERCENT ERROR of pV/nT AND GAS CONSTANT:        10.60569
+
+  THE COMPRESSIBILITY (unitless):                  0.89394 
+
+  TOTAL VOLUME (m^3):                      1.02479e-25 
+
+  NUMBER OF PARTICLES (unitless):          2160 
+==40611== Profiling application: ./bin/MDpar2.exe 500 30 2160
+==40611== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   97.53%  1.64016s       201  8.1600ms  8.1462ms  8.1692ms  potentialComputeKernel(double*, double*, double*, double*, double*, double*, int, double*, int)
+                    1.46%  24.500ms      1407  17.412us  1.2790us  29.792us  [CUDA memcpy DtoH]
+                    0.84%  14.063ms       603  23.321us  22.592us  32.225us  [CUDA memcpy HtoD]
+                    0.18%  3.0187ms       804  3.7540us  1.7920us  5.0550us  [CUDA memset]
+      API calls:   87.14%  1.85232s      2010  921.55us  13.930us  8.4237ms  cudaMemcpy
+                   11.03%  234.41ms      1407  166.60us  2.6500us  203.46ms  cudaMalloc
+                    1.27%  27.049ms      1407  19.224us  2.3340us  169.10us  cudaFree
+                    0.36%  7.6974ms       804  9.5730us  4.0060us  62.039us  cudaMemset
+                    0.13%  2.8463ms       201  14.160us  11.640us  35.558us  cudaLaunchKernel
+                    0.02%  460.68us         1  460.68us  460.68us  460.68us  cuDeviceTotalMem
+                    0.01%  304.06us       101  3.0100us     343ns  119.65us  cuDeviceGetAttribute
+                    0.01%  281.44us      1005     280ns     180ns  2.5470us  cudaGetLastError
+                    0.01%  244.19us         1  244.19us  244.19us  244.19us  cuDeviceGetName
+                    0.00%  14.443us         1  14.443us  14.443us  14.443us  cuDeviceGetPCIBusId
+                    0.00%  3.9490us         3  1.3160us     657ns  2.2500us  cuDeviceGetCount
+                    0.00%  2.0490us         2  1.0240us     475ns  1.5740us  cuDeviceGet
+                    0.00%     880ns         1     880ns     880ns     880ns  cuDeviceGetUuid 
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                  WELCOME TO WILLY P CHEM MD!
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ENTER A TITLE FOR YOUR CALCULATION!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                  TITLE ENTERED AS 'cp'
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  WHICH NOBLE GAS WOULD YOU LIKE TO SIMULATE? (DEFAULT IS ARGON)
+
+  FOR HELIUM,  TYPE 'He' THEN PRESS 'return' TO CONTINUE
+  FOR NEON,    TYPE 'Ne' THEN PRESS 'return' TO CONTINUE
+  FOR ARGON,   TYPE 'Ar' THEN PRESS 'return' TO CONTINUE
+  FOR KRYPTON, TYPE 'Kr' THEN PRESS 'return' TO CONTINUE
+  FOR XENON,   TYPE 'Xe' THEN PRESS 'return' TO CONTINUE
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                     YOU ARE SIMULATING Ar GAS! 
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  YOU WILL NOW ENTER A FEW SIMULATION PARAMETERS
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+  ENTER THE INTIAL TEMPERATURE OF YOUR GAS IN KELVIN
+
+
+  ENTER THE NUMBER DENSITY IN moles/m^3
+  FOR REFERENCE, NUMBER DENSITY OF AN IDEAL GAS AT STP IS ABOUT 40 moles/m^3
+  NUMBER DENSITY OF LIQUID ARGON AT 1 ATM AND 87 K IS ABOUT 35000 moles/m^3
+  PERCENTAGE OF CALCULATION COMPLETE:
+  [==40630== NVPROF is profiling process 40630, command: ./bin/MDpar2.exe 313 16 5000
+ 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100 ]
+
+  TO ANIMATE YOUR SIMULATION, OPEN THE FILE 
+  'cp_traj.xyz' WITH VMD AFTER THE SIMULATION COMPLETES
+
+  TO ANALYZE INSTANTANEOUS DATA ABOUT YOUR MOLECULE, OPEN THE FILE 
+  'cp_output.txt' WITH YOUR FAVORITE TEXT EDITOR OR IMPORT THE DATA INTO EXCEL
+
+  THE FOLLOWING THERMODYNAMIC AVERAGES WILL BE COMPUTED AND WRITTEN TO THE FILE  
+  'cp_average.txt':
+
+  AVERAGE TEMPERATURE (K):                       131.45506
+
+  AVERAGE PRESSURE  (Pa):                  131001228.45076
+
+  PV/nT (J * mol^-1 K^-1):                        28.47279
+
+  PERCENT ERROR of pV/nT AND GAS CONSTANT:       242.44905
+
+  THE COMPRESSIBILITY (unitless):                  3.42449 
+
+  TOTAL VOLUME (m^3):                      2.37220e-25 
+
+  NUMBER OF PARTICLES (unitless):          5000 
+==40630== Profiling application: ./bin/MDpar2.exe 313 16 5000
+==40630== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   98.78%  3.38131s       201  16.822ms  16.780ms  16.858ms  potentialComputeKernel(double*, double*, double*, double*, double*, double*, int, double*, int)
+                    0.72%  24.550ms      1407  17.448us  1.2800us  40.641us  [CUDA memcpy DtoH]
+                    0.41%  14.070ms       603  23.333us  22.592us  32.800us  [CUDA memcpy HtoD]
+                    0.09%  3.0194ms       804  3.7550us  1.7910us  5.0240us  [CUDA memset]
+      API calls:   92.61%  3.62190s      2010  1.8019ms  14.192us  25.622ms  cudaMemcpy
+                    6.37%  249.03ms      1407  177.00us  2.6320us  216.92ms  cudaMalloc
+                    0.69%  26.972ms      1407  19.170us  2.2740us  370.32us  cudaFree
+                    0.21%  8.3376ms       804  10.370us  4.1020us  68.826us  cudaMemset
+                    0.08%  3.0819ms       201  15.332us  11.565us  43.865us  cudaLaunchKernel
+                    0.01%  521.50us         1  521.50us  521.50us  521.50us  cuDeviceTotalMem
+                    0.01%  369.45us      1005     367ns     195ns  15.954us  cudaGetLastError
+                    0.01%  344.86us       101  3.4140us     383ns  135.08us  cuDeviceGetAttribute
+                    0.01%  216.62us         1  216.62us  216.62us  216.62us  cuDeviceGetName
+                    0.00%  18.650us         1  18.650us  18.650us  18.650us  cuDeviceGetPCIBusId
+                    0.00%  3.7520us         3  1.2500us     417ns  2.4610us  cuDeviceGetCount
+                    0.00%  1.9220us         2     961ns     430ns  1.4920us  cuDeviceGet
+                    0.00%     950ns         1     950ns     950ns     950ns  cuDeviceGetUuid 
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                  WELCOME TO WILLY P CHEM MD!
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  ENTER A TITLE FOR YOUR CALCULATION!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                  TITLE ENTERED AS 'cp'
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  WHICH NOBLE GAS WOULD YOU LIKE TO SIMULATE? (DEFAULT IS ARGON)
+
+  FOR HELIUM,  TYPE 'He' THEN PRESS 'return' TO CONTINUE
+  FOR NEON,    TYPE 'Ne' THEN PRESS 'return' TO CONTINUE
+  FOR ARGON,   TYPE 'Ar' THEN PRESS 'return' TO CONTINUE
+  FOR KRYPTON, TYPE 'Kr' THEN PRESS 'return' TO CONTINUE
+  FOR XENON,   TYPE 'Xe' THEN PRESS 'return' TO CONTINUE
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                     YOU ARE SIMULATING Ar GAS! 
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  YOU WILL NOW ENTER A FEW SIMULATION PARAMETERS
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+  ENTER THE INTIAL TEMPERATURE OF YOUR GAS IN KELVIN
+
+
+  ENTER THE NUMBER DENSITY IN moles/m^3
+  FOR REFERENCE, NUMBER DENSITY OF AN IDEAL GAS AT STP IS ABOUT 40 moles/m^3
+  NUMBER DENSITY OF LIQUID ARGON AT 1 ATM AND 87 K IS ABOUT 35000 moles/m^3
+  PERCENTAGE OF CALCULATION COMPLETE:
+  [==40651== NVPROF is profiling process 40651, command: ./bin/MDpar2.exe 500 30 5000
+ 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100 ]
+==40651== Profiling application: ./bin/MDpar2.exe 500 30 5000
+
+  TO ANIMATE YOUR SIMULATION, OPEN THE FILE 
+  'cp_traj.xyz' WITH VMD AFTER THE SIMULATION COMPLETES
+
+  TO ANALYZE INSTANTANEOUS DATA ABOUT YOUR MOLECULE, OPEN THE FILE 
+  'cp_output.txt' WITH YOUR FAVORITE TEXT EDITOR OR IMPORT THE DATA INTO EXCEL
+
+  THE FOLLOWING THERMODYNAMIC AVERAGES WILL BE COMPUTED AND WRITTEN TO THE FILE  
+  'cp_average.txt':
+
+  AVERAGE TEMPERATURE (K):                       131.45506
+
+  AVERAGE PRESSURE  (Pa):                  131001228.45076
+
+  PV/nT (J * mol^-1 K^-1):                        28.47279
+
+  PERCENT ERROR of pV/nT AND GAS CONSTANT:       242.44905
+
+  THE COMPRESSIBILITY (unitless):                  3.42449 
+
+  TOTAL VOLUME (m^3):                      2.37220e-25 
+
+  NUMBER OF PARTICLES (unitless):          5000 
+==40651== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   98.93%  3.83309s       201  19.070ms  19.024ms  19.104ms  potentialComputeKernel(double*, double*, double*, double*, double*, double*, int, double*, int)
+                    0.63%  24.472ms      1407  17.393us  1.2800us  33.217us  [CUDA memcpy DtoH]
+                    0.36%  13.885ms       603  23.026us  22.529us  33.121us  [CUDA memcpy HtoD]
+                    0.08%  3.0308ms       804  3.7690us  1.7920us  9.0560us  [CUDA memset]
+      API calls:   93.49%  4.03804s      2010  2.0090ms  14.113us  19.274ms  cudaMemcpy
+                    5.64%  243.78ms      1407  173.26us  2.5880us  214.25ms  cudaMalloc
+                    0.60%  25.839ms      1407  18.364us  2.3190us  168.23us  cudaFree
+                    0.17%  7.4112ms       804  9.2170us  3.9660us  63.209us  cudaMemset
+                    0.06%  2.7208ms       201  13.536us  11.583us  35.621us  cudaLaunchKernel
+                    0.01%  558.25us         1  558.25us  558.25us  558.25us  cuDeviceTotalMem
+                    0.01%  345.42us       101  3.4190us     387ns  135.42us  cuDeviceGetAttribute
+                    0.01%  284.89us      1005     283ns     184ns  2.7260us  cudaGetLastError
+                    0.00%  184.53us         1  184.53us  184.53us  184.53us  cuDeviceGetName
+                    0.00%  14.754us         1  14.754us  14.754us  14.754us  cuDeviceGetPCIBusId
+                    0.00%  3.6340us         3  1.2110us     474ns  2.1810us  cuDeviceGetCount
+                    0.00%  1.9620us         2     981ns     530ns  1.4320us  cuDeviceGet
+                    0.00%  1.0430us         1  1.0430us  1.0430us  1.0430us  cuDeviceGetUuid 
+3ª Fase
+
+
+
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
+3ª Fase
